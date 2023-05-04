@@ -19,6 +19,7 @@
 .links {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .links li {
   margin: 1rem 0.7rem;
@@ -44,6 +45,10 @@
 .center form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.center form .search-bar {
+  width: 582px;
 }
 
 .footer {
@@ -55,6 +60,25 @@
 }
 .footer .links > li a {
   color: rgb(102, 102, 102);
+}
+
+.btn {
+  font-size: 14px;
+  color: white;
+  padding: 0.5em 1.7em;
+  background-color: rgb(31, 128, 255);
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(6, 114, 255);
+  filter: drop-shadow(1px 1px rgb(2, 103, 235));
+}
+
+.apps-btn {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
