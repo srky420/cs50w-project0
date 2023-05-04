@@ -8,6 +8,8 @@
     <title>Google Search</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
@@ -19,10 +21,11 @@
                 <li><a href="">Gmail</a></li>
                 <li><a href="">Images</a></li>
                 <li>
-                    <a href="">
+                    <a href="" class="apps-btn">
                         <span class="material-symbols-outlined apps-btn">
                             apps
                         </span>
+                        <span class="dot"></span>
                     </a>
                 </li>
                 <li><button class="btn btn-blue">Sign in</button></li>
@@ -30,13 +33,21 @@
         </div>
         <div class="section center">
             <div class="logo">
-                <img src="./img/logo.png" alt="logo" width="290">
+                <img src="./img/logo.png" alt="logo" width="280">
             </div>
             <form action="https://www.google.com/search" method="get">
-                <input type="text" name="q" id="q" class="search-bar">
-                <input type="submit" value="Google Search">
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <input type="text" name="q" id="q" class="search-input">
+                </div>
+                <div class="search-btns">
+                    <button type="submit" class="btn">Google Search</button>
+                    <button type="submit" class="btn">I'm Feeling Lucky</button>
+                </div>
             </form>
-            <p>Google offered in:</p>
+            <p>Google offered in: <a href="">German</a> <a href="">Spanish</a> <a href="">French</a></p>
         </div>
         <div class="section footer">
             <ul class="links">

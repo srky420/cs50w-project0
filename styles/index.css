@@ -32,9 +32,28 @@
 .links a:hover {
   text-decoration: underline;
 }
+.links .apps-btn {
+  margin-top: 5px;
+  color: grey;
+}
+.links .apps-btn .dot {
+  height: 40px;
+  width: 40px;
+  background-color: #dfdfdf;
+  border-radius: 50%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  right: 132px;
+  top: 13px;
+}
+.links .apps-btn:hover .dot {
+  display: inline-block;
+}
 
 .header {
   justify-content: right;
+  padding: 0 1rem;
 }
 
 .center {
@@ -49,6 +68,49 @@
 }
 .center form .search-bar {
   width: 582px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(202, 202, 202);
+  height: 50px;
+  border-radius: 30px;
+  margin: 1rem 0;
+}
+.center form .search-bar span {
+  padding: 10px;
+  color: grey;
+}
+.center form .search-bar:hover {
+  box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+  -webkit-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+  -moz-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+}
+.center form .search-bar:focus-within {
+  box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+  -webkit-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+  -moz-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+}
+.center form .search-input {
+  width: 500px;
+  border: none;
+}
+.center form .search-input:focus {
+  outline: none;
+}
+.center form .search-btns {
+  display: flex;
+}
+.center form .search-btns button {
+  margin: 1rem 0.5rem;
+}
+.center p {
+  font-size: 13px;
+  margin: 1rem;
+}
+.center p a {
+  text-decoration: none;
+}
+.center p a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -64,21 +126,30 @@
 
 .btn {
   font-size: 14px;
-  color: white;
+  color: black;
   padding: 0.5em 1.7em;
-  background-color: rgb(31, 128, 255);
   border: none;
   border-radius: 3px;
+  background-color: rgb(247, 246, 246);
+}
+
+.btn-blue {
+  background-color: rgb(31, 128, 255);
+  color: white;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: rgb(6, 114, 255);
-  filter: drop-shadow(1px 1px rgb(2, 103, 235));
+  background-color: rgb(241, 241, 241);
+  outline: 1px solid rgb(202, 202, 202);
+  filter: drop-shadow(0 1px rgb(219, 219, 219));
 }
 
-.apps-btn {
-  margin-top: 5px;
+.btn-blue:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(6, 114, 255);
+  filter: drop-shadow(1px 1px rgb(2, 103, 235));
 }
 
 /*# sourceMappingURL=index.css.map */
