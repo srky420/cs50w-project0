@@ -59,7 +59,7 @@ $dark-red: #db4437;
 
             input {
                 width: 500px;
-                height: 20px;
+                height: 10px;
                 margin: 0 1rem;
                 padding: 1rem 0.5rem;
                 border-radius: 0;
@@ -80,10 +80,23 @@ $dark-red: #db4437;
             .info {
                 color: $default-grey;
                 font-size: 12px;
-                width: 300px;
+                width: 350px;
 
                 span {
                     font-family: 'Courier New', Courier, monospace;
+                }
+            }
+
+            .range {
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: 227px;
+                }
+
+                p {
+                    font-size: 14px;
                 }
             }
         } 
@@ -97,6 +110,7 @@ $dark-red: #db4437;
             button {
                 background-color: $dark-blue;
                 font-size: 12px;
+                border: 1px solid $default-blue;
             }
         }
     }
