@@ -49,6 +49,7 @@ $default-grey: grey;
     .apps-btn {
         margin-top: 5px;
         color: $default-grey;
+        position: relative;
 
         .dot {
             height: 40px;
@@ -67,6 +68,16 @@ $default-grey: grey;
         .dot {
             display: inline-block;
         }
+    }
+
+    .apps-list {
+        position: fixed; 
+        width: 300px;
+        height: 70%;
+        max-height: 400px;
+        border: 1px solid $dark-grey;
+        right: 20px;
+        top: 60px;
     }
 }
 
