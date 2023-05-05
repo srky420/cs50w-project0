@@ -66,7 +66,7 @@
   background-color: white;
   overflow-y: scroll;
   filter: drop-shadow(0 0 5px #ccc);
-  z-index: 1;
+  z-index: 2;
 }
 .links .apps-list .row {
   margin: 1rem 0;
@@ -79,7 +79,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.2rem;
+  padding: 1rem;
   width: 90px;
   margin: 0 0.5rem;
 }
@@ -120,6 +120,15 @@
 .center form .search-bar span {
   padding: 1rem;
   color: grey;
+}
+.center form .search-bar button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 1rem;
+  color: #4285f4;
+}
+.center form .search-bar button:hover {
+  cursor: pointer;
 }
 .center form .search-bar:hover {
   box-shadow: 0px 6px 15px -5px #e6e6e6;
@@ -163,8 +172,19 @@
   padding: 0 1rem;
   margin-top: auto;
 }
-.footer .links > li a {
+.footer .links li a {
   color: grey;
+}
+.footer .links .settings-list {
+  position: fixed;
+  width: 160px;
+  background-color: white;
+  bottom: 50px;
+  right: 20px;
+  list-style: none;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
 }
 
 .btn {
