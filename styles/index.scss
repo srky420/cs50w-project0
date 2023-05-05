@@ -183,3 +183,7 @@ $default-grey: grey;
     background-color: $default-blue;
     filter: drop-shadow(0 1px 1px $dark-blue);
 }
+
+.btn:active {
+    outline: 1px solid $dark-blue
+}

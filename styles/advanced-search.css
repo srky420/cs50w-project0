@@ -43,7 +43,7 @@
 }
 .adv-search .adv-form .input-group input {
   width: 500px;
-  height: 20px;
+  height: 10px;
   margin: 0 1rem;
   padding: 1rem 0.5rem;
   border-radius: 0;
@@ -61,10 +61,20 @@
 .adv-search .adv-form .input-group .info {
   color: grey;
   font-size: 12px;
-  width: 300px;
+  width: 350px;
 }
 .adv-search .adv-form .input-group .info span {
   font-family: "Courier New", Courier, monospace;
+}
+.adv-search .adv-form .input-group .range {
+  display: flex;
+  align-items: center;
+}
+.adv-search .adv-form .input-group .range input {
+  width: 227px;
+}
+.adv-search .adv-form .input-group .range p {
+  font-size: 14px;
 }
 .adv-search .adv-form .search-btn {
   margin: 2rem 0;
@@ -75,6 +85,7 @@
 .adv-search .adv-form .search-btn button {
   background-color: #4285f4;
   font-size: 12px;
+  border: 1px solid rgb(0, 110, 255);
 }
 
 @media (max-width: 1080px) {
