@@ -63,7 +63,7 @@ $dark-red: #db4437;
                 margin: 0 1rem;
                 padding: 1rem 0.5rem;
                 border-radius: 0;
-                border: 1px solid $grey;
+                border: 1px solid $dark-grey;
             }
             
             input[type=text]:focus {
@@ -81,6 +81,10 @@ $dark-red: #db4437;
                 color: $default-grey;
                 font-size: 12px;
                 width: 300px;
+
+                span {
+                    font-family: 'Courier New', Courier, monospace;
+                }
             }
         } 
 
@@ -94,6 +98,19 @@ $dark-red: #db4437;
                 background-color: $dark-blue;
                 font-size: 12px;
             }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .info {
+        display: none;
+    }
+
+    .form-top {
+        
+        .text-dull {
+            display: none;
         }
     }
 }

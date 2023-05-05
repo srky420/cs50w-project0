@@ -47,7 +47,7 @@
   margin: 0 1rem;
   padding: 1rem 0.5rem;
   border-radius: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ccc;
 }
 .adv-search .adv-form .input-group input[type=text]:focus {
   outline: none;
@@ -63,6 +63,9 @@
   font-size: 12px;
   width: 300px;
 }
+.adv-search .adv-form .input-group .info span {
+  font-family: "Courier New", Courier, monospace;
+}
 .adv-search .adv-form .search-btn {
   margin: 2rem 0;
   display: flex;
@@ -72,6 +75,15 @@
 .adv-search .adv-form .search-btn button {
   background-color: #4285f4;
   font-size: 12px;
+}
+
+@media (max-width: 1080px) {
+  .info {
+    display: none;
+  }
+  .form-top .text-dull {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=advanced-search.css.map */
