@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+$btn-text: white;
+$dark-blue: #4285f4;
+$blue: #76a7fa;
+$light-blue: #a0c3ff;
+$default-blue: rgb(0, 110, 255);
+$light-grey: #f2f2f2;
+$grey: #e6e6e6;
+$dark-grey: #ccc;
+$default-grey: grey;
+
 * {
     padding: 0;
     margin: 0;
@@ -38,12 +48,12 @@
 
     .apps-btn {
         margin-top: 5px;
-        color: grey;
+        color: $default-grey;
 
         .dot {
             height: 40px;
             width: 40px;
-            background-color: #dfdfdf;
+            background-color: $light-grey;
             border-radius: 50%;
             display: none;
             position: fixed;
@@ -79,7 +89,7 @@
             width: 582px;
             display: flex;
             align-items: center;
-            border: 1px solid rgb(202, 202, 202);
+            border: 1px solid $grey;
             height: 50px;
             border-radius: 30px;
             margin: 1rem 0;
@@ -91,15 +101,15 @@
         }
 
         .search-bar:hover {
-            box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
-            -webkit-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
-            -moz-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+            box-shadow: 0px 6px 15px -5px $grey;
+            -webkit-box-shadow: 0px 6px 15px -5px $grey;
+            -moz-box-shadow: 0px 6px 15px -5px $grey;
         }
 
         .search-bar:focus-within {
-            box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
-            -webkit-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
-            -moz-box-shadow: 0px 6px 15px -5px rgb(202, 202, 202);
+            box-shadow: 0px 6px 15px -5px $grey;
+            -webkit-box-shadow: 0px 6px 15px -5px $grey;
+            -moz-box-shadow: 0px 6px 15px -5px $grey;
         }
 
         .search-input {
@@ -136,13 +146,13 @@
 
 .footer {
     justify-content: space-between;
-    background-color: rgb(236, 236, 236);
-    border-top: 1px solid rgb(202, 202, 202);
+    background-color: $light-grey;
+    border-top: 1px solid $dark-grey;
     padding: 0 1rem;
     margin-top: auto;
 
     .links > li a {
-        color: rgb(102, 102, 102);
+        color: $default-grey;
     }
 }
 
@@ -152,24 +162,23 @@
     padding: 0.5em 1.7em;
     border: none;
     border-radius: 3px;
-    background-color: rgb(247, 246, 246);
+    background-color: $light-grey;
 }
 
 .btn-blue {
-    background-color: rgb(31, 128, 255);
-    color: white;
+    background-color: $dark-blue;
+    color: $btn-text;
 }
 
 .btn:hover {
     cursor: pointer;
-    background-color: rgb(241, 241, 241);
-    outline: 1px solid rgb(202, 202, 202);
-    filter: drop-shadow(0 1px rgb(219, 219, 219));
+    outline: 1px solid $dark-grey;
+    filter: drop-shadow(0 1px $dark-grey);
 }
 
 .btn-blue:hover {
     cursor: pointer;
     outline: none;
-    background-color: rgb(6, 114, 255);
-    filter: drop-shadow(0 1px 1px rgb(2, 103, 235));
+    background-color: $default-blue;
+    filter: drop-shadow(0 1px 1px $dark-blue);
 }

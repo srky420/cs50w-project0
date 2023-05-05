@@ -13,12 +13,12 @@
 .adv-search .line {
   width: 100%;
   height: 1px;
-  background-color: rgb(230, 230, 230);
+  background-color: #e6e6e6;
   margin: 1em 0;
 }
 .adv-search .heading {
   font-size: 20px;
-  color: rgb(226, 0, 0);
+  color: #db4437;
 }
 .adv-search .form-top {
   display: flex;
@@ -44,12 +44,12 @@
   margin: 0 1rem;
   padding: 1rem 0.5rem;
   border-radius: 0;
-  border: 1px solid rgb(211, 211, 211);
+  border: 1px solid #e6e6e6;
 }
 .adv-search .adv-form .input-group input[type=text]:focus {
   outline: none;
   border-radius: 0;
-  border: 1px solid rgb(0, 104, 223);
+  border: 1px solid #4285f4;
 }
 .adv-search .adv-form .input-group .label {
   font-size: 14px;
@@ -67,7 +67,7 @@
   width: 690px;
 }
 .adv-search .adv-form .search-btn button {
-  background-color: rgb(48, 144, 253);
+  background-color: #4285f4;
   font-size: 12px;
 }
 
