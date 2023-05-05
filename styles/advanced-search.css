@@ -1,0 +1,74 @@
+.header {
+  justify-content: space-between !important;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.adv-search {
+  flex-direction: column;
+  padding: 1em 2.5em;
+}
+.adv-search .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(230, 230, 230);
+  margin: 1em 0;
+}
+.adv-search .heading {
+  font-size: 20px;
+  color: rgb(226, 0, 0);
+}
+.adv-search .form-top {
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+}
+.adv-search .form-top .text-dull {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+}
+.adv-search .adv-form {
+  display: flex;
+}
+.adv-search .adv-form .input-group {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.adv-search .adv-form .input-group input {
+  width: 500px;
+  height: 20px;
+  margin: 0 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0;
+  border: 1px solid rgb(211, 211, 211);
+}
+.adv-search .adv-form .input-group input[type=text]:focus {
+  outline: none;
+  border-radius: 0;
+  border: 1px solid rgb(0, 104, 223);
+}
+.adv-search .adv-form .input-group .label {
+  font-size: 14px;
+  width: 175px;
+}
+.adv-search .adv-form .input-group .info {
+  color: grey;
+  font-size: 12px;
+  width: 300px;
+}
+.adv-search .adv-form .search-btn {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: end;
+  width: 690px;
+}
+.adv-search .adv-form .search-btn button {
+  background-color: rgb(48, 144, 253);
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=advanced-search.css.map */
