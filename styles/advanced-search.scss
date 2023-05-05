@@ -23,7 +23,9 @@ $dark-red: #db4437;
     padding: 1em 2.5em;
 
     .line {
-        width: 100%;
+        width: 100vw;
+        transform: translateX(-40px);
+        overflow: hidden;
         height: 1px;
         background-color: $grey;
         margin: 1em 0;
@@ -38,6 +40,7 @@ $dark-red: #db4437;
         display: flex;
         justify-content: space-between;
         width: 860px;
+        margin-top: 2rem;
 
         .text-dull {
             font-size: 14px;
