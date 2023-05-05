@@ -13,3 +13,13 @@ const settingsBtn = document.querySelector('.settings-link');
 settingsBtn.addEventListener('click', function(e) {
     settingsList.classList.toggle('hidden');
 });
+
+// Reset
+document.body.addEventListener('click', function(e) {
+    if (e.target !== settingsBtn) {
+        settingsList.classList.add('hidden');
+    }
+    if (e.target.id !== 'app') {
+        appsList.classList.add('hidden');
+    }   
+});

@@ -31,7 +31,7 @@
                 <li><a href="https://www.gmail.com">Gmail</a></li>
                 <li>
                     <a href="#" class="apps-btn">
-                        <span class="material-symbols-outlined apps-btn">
+                        <span class="material-symbols-outlined" id="app">
                             apps
                         </span>
                         <span class="dot"></span>
@@ -41,15 +41,15 @@
                     <div class="apps-list hidden">
                         <!-- Row -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.google.com/account/about/?hl=en-GB'">
                                 <img src="./img/account.png" alt="search-icon" width="45">
                                 <p>Account</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.google.com/'">
                                 <img src="./img/search.png" alt="search-icon" width="45">
                                 <p>Search</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.google.com/maps/'">
                                 <img src="./img/maps.png" alt="maps-icon" width="45">
                                 <p>Maps</p>
                             </div>
@@ -58,15 +58,15 @@
 
                         <!-- Row -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.youtube.com/'">
                                 <img src="./img/youtube.png" alt="search-icon" width="45">
                                 <p>Youtube</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://play.google.com/store/games'">
                                 <img src="./img/play.png" alt="search-icon" width="45">
                                 <p>Play</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://news.google.com/'">
                                 <img src="./img/news.png" alt="maps-icon" width="45">
                                 <p>News</p>
                             </div>
@@ -75,15 +75,15 @@
 
                         <!-- Row -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.google.com/intl/en-GB/gmail/about/'">
                                 <img src="./img/gmail.png" alt="search-icon" width="45">
                                 <p>Gmail</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://apps.google.com/meet/?hs=197'">
                                 <img src="./img/meet.png" alt="search-icon" width="45">
                                 <p>Meet</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://accounts.google.com/'">
                                 <img src="./img/chat.png" alt="maps-icon" width="45">
                                 <p>Chat</p>
                             </div>
@@ -92,15 +92,15 @@
 
                         <!-- Row -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://accounts.google.com/'">
                                 <img src="./img/contacts.png" alt="search-icon" width="45">
                                 <p>Contacts</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://www.google.com/intl/en-GB/drive/'">
                                 <img src="./img/drive.png" alt="search-icon" width="45">
                                 <p>Drive</p>
                             </div>
-                            <div class="col">
+                            <div class="col" onclick="window.location.href = 'https://workspace.google.com/products/calendar/?hl=en-GB'">
                                 <img src="./img/calender.png" alt="maps-icon" width="45">
                                 <p>Calender</p>
                             </div>
@@ -110,7 +110,7 @@
                 </li>
                 <li>
                     <button class="btn btn-blue"
-                        onclick="window.location.href = 'https://accounts.google.com/v3/signin/identifier?dsh=S-1760859812%3A1683278547408889&continue=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&ec=GAZAoQQ&followup=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&hl=en-PK&ifkv=Af_xneHhlmdu7U7Qn47YGw0Z5Jeik_P4o3ii8bzGS3dPPEKDWuUGpuKEfSrON6FlWSMi6XZqoS2gww&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin'">
+                        onclick="window.location.href = 'https://accounts.google.com/'">
                         Sign in
                     </button>
                 </li>
@@ -122,6 +122,7 @@
         <div class="section center">
             <div class="logo">
                 <img src="./img/logo.png" alt="logo" width="280">
+                <p class="img-text">images</p>
             </div>
             <form action="https://www.google.com/search" method="get">
                 <div class="search-bar">
@@ -158,10 +159,10 @@
                 <li>
                     <a href="#" class="settings-link">Settings</a>
                     <ul class="settings-list hidden">
-                        <li><a href="">Search settings</a></li>
-                        <li><a href="">Advanced Search</a></li>
-                        <li><a href="">Search history</a></li>
-                        <li><a href="">Search help</a></li>
+                        <li><a href="https://www.google.com.pk/preferences?hl=en-PK&fg=1">Search settings</a></li>
+                        <li><a href="./advanced-search.html">Advanced Search</a></li>
+                        <li><a href="https://www.google.com.pk/history/optout?hl=en-PK&fg=1">Search history</a></li>
+                        <li><a href="https://support.google.com/websearch/?visit_id=638188976292361907-4083474957&hl=en-PK&rd=2#topic=3378866">Search help</a></li>
                         <li><a href="">Send feedback</a></li>
                     </ul>
                 </li>
