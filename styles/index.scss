@@ -9,6 +9,7 @@ $light-grey: #f2f2f2;
 $grey: #e6e6e6;
 $dark-grey: #ccc;
 $default-grey: grey;
+$default-white: white;
 
 * {
     padding: 0;
@@ -70,14 +71,53 @@ $default-grey: grey;
         }
     }
 
+    .app-btn:active {
+        .apps-list {
+            display: block;
+        }
+    }
+
     .apps-list {
         position: fixed; 
-        width: 300px;
-        height: 70%;
-        max-height: 400px;
+        width: 320px;
+        height: 80%;
+        max-height: 450px;
         border: 1px solid $dark-grey;
+        border-radius: 10px;
         right: 20px;
         top: 60px;
+        background-color: $default-white;
+        overflow-y: scroll;
+        filter: drop-shadow(0 0 5px $dark-grey);
+        z-index: 1;
+
+        .row {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.2rem;
+            width: 90px;
+            margin: 0 0.5rem;
+
+            p {
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+
+        .col:hover {
+            cursor: pointer;
+            background-color: $light-grey;
+            border-radius: 10px;
+        }
+
     }
 }
 
@@ -197,4 +237,8 @@ $default-grey: grey;
 
 .btn:active {
     outline: 1px solid $dark-blue
+}
+
+.hidden {
+    display: none;
 }

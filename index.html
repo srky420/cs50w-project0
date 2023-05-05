@@ -11,9 +11,14 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Javascript -->
+    <script defer src="./scripts/script.js"></script>
 
     <title>Google Search</title>
 </head>
@@ -28,17 +33,87 @@
                 <li><a href="https://www.gmail.com">Gmail</a></li>
                 <li><a href="">Images</a></li>
                 <li>
-                    <a href="" class="apps-btn">
+                    <a href="#" class="apps-btn">
                         <span class="material-symbols-outlined apps-btn">
                             apps
                         </span>
                         <span class="dot"></span>
                     </a>
-                    <div class="apps-list">
 
+                    <!-- Apps list -->
+                    <div class="apps-list hidden">
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col">
+                                <img src="./img/account.png" alt="search-icon" width="45">
+                                <p>Account</p> 
+                            </div>
+                            <div class="col">
+                                <img src="./img/search.png" alt="search-icon" width="45">
+                                <p>Search</p>
+                            </div>
+                            <div class="col">
+                                <img src="./img/maps.png" alt="maps-icon" width="45">
+                                <p>Maps</p>
+                            </div>
+                        </div>
+                        <!-- Row End -->
+
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col">
+                                <img src="./img/youtube.png" alt="search-icon" width="45">
+                                <p>Youtube</p> 
+                            </div>
+                            <div class="col">
+                                <img src="./img/play.png" alt="search-icon" width="45">
+                                <p>Play</p>
+                            </div>
+                            <div class="col">
+                                <img src="./img/news.png" alt="maps-icon" width="45">
+                                <p>News</p>
+                            </div>
+                        </div>
+                        <!-- Row End -->
+
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col">
+                                <img src="./img/gmail.png" alt="search-icon" width="45">
+                                <p>Gmail</p> 
+                            </div>
+                            <div class="col">
+                                <img src="./img/meet.png" alt="search-icon" width="45">
+                                <p>Meet</p>
+                            </div>
+                            <div class="col">
+                                <img src="./img/chat.png" alt="maps-icon" width="45">
+                                <p>Chat</p>
+                            </div>
+                        </div>
+                        <!-- Row End -->
+
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col">
+                                <img src="./img/contacts.png" alt="search-icon" width="45">
+                                <p>Contacts</p> 
+                            </div>
+                            <div class="col">
+                                <img src="./img/drive.png" alt="search-icon" width="45">
+                                <p>Drive</p>
+                            </div>
+                            <div class="col">
+                                <img src="./img/calender.png" alt="maps-icon" width="45">
+                                <p>Calender</p>
+                            </div>
+                        </div>
+                        <!-- Row End -->
                     </div>
                 </li>
-                <li><button class="btn btn-blue" onclick="window.location.href = 'https://accounts.google.com/v3/signin/identifier?dsh=S-1760859812%3A1683278547408889&continue=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&ec=GAZAoQQ&followup=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&hl=en-PK&ifkv=Af_xneHhlmdu7U7Qn47YGw0Z5Jeik_P4o3ii8bzGS3dPPEKDWuUGpuKEfSrON6FlWSMi6XZqoS2gww&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin'">Sign in</button></li>
+                <li><button class="btn btn-blue"
+                        onclick="window.location.href = 'https://accounts.google.com/v3/signin/identifier?dsh=S-1760859812%3A1683278547408889&continue=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&ec=GAZAoQQ&followup=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-PK%26fg%3D1&hl=en-PK&ifkv=Af_xneHhlmdu7U7Qn47YGw0Z5Jeik_P4o3ii8bzGS3dPPEKDWuUGpuKEfSrON6FlWSMi6XZqoS2gww&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin'">Sign
+                        in</button></li>
             </ul>
         </div>
         <!-- Section End -->
@@ -67,9 +142,15 @@
         <!-- Section Start -->
         <div class="section footer">
             <ul class="links">
-                <li><a href="https://about.google/?utm_source=google-PK&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
-                <li><a href="https://ads.google.com/intl/en_pk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                <li><a
+                        href="https://about.google/?utm_source=google-PK&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                </li>
+                <li><a
+                        href="https://ads.google.com/intl/en_pk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                </li>
+                <li><a
+                        href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+                </li>
                 <li><a href="https://www.google.com/search/howsearchworks/">How Search works</a></li>
             </ul>
             <ul class="links">
